@@ -11,6 +11,7 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    border-style: groove;
 }
 
 /* Styling header */
@@ -85,7 +86,6 @@ form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    border-style: groove;
 }
 
 form button {
