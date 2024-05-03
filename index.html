@@ -1,97 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <style> 
-	
-	a:hover {
-  background-color: Red;}
-  
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-		  
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #444;
-            padding: 0.5em;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-        }
-
-        section {
-            padding: 2em;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can create a separate CSS file for styling -->
 </head>
-
 <body>
-  	
-	{
-	<p style="background-image: url('maganda.jpg');">
-
-}
-	
-	
-	<header>
-        <h1>My name is Nicole Ronquillo , This is my portfolio</h1>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to my portfolio!</p>
-    </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello!I love playing games & i love eating sweets, i like sleeping too.</p>
+        <p>Write a brief introduction about yourself, your skills, and your experience.</p>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>programming languages, tools, etc.</p>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>nicoleronquillo@gmail.com</p>
+        <h2>Contact Me</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
